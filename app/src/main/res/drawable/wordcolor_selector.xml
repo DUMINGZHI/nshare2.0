@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="false"
+        android:color="@color/colorBlack"/><!--选择器的默认颜色-->
+    <item
+        android:state_enabled="true"
+        android:color="@color/colorgreen" /><!--控件是否接受触摸或者点击事件时的颜色-->
+
+</selector>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/colorSilver">
+
+        <ProgressBar
+            android:id="@+id/initResPb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorSilver"
+        android:id="@+id/listArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColor="@drawable/wordcolor_selector"
+                android:drawableTop="@drawable/home_selector"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="大厅"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/btnPublish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:button="@null"
+                android:text="发布"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@drawable/wordcolor_selector"
+                android:drawableTop="@drawable/publish_selector"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+            <RadioButton
+                android:id="@+id/btnMassage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:button="@null"
+                android:text="消息"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@drawable/wordcolor_selector"
+                android:drawableTop="@drawable/massage_selector"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+            <RadioButton
+                android:id="@+id/btnMy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:text="我的"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@drawable/wordcolor_selector"
+                android:drawableTop="@drawable/my_selector"
+                android:scaleX="0.8"
+                android:scaleY="0.8"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
